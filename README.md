@@ -83,7 +83,7 @@ npm install -S [ejs|pug|nunjucks|handlebars|emblem|dust-linkedin|jade]
     - `less@^2.0.0`
     - `stylus@^0.51.0`
     - `styl@^0.2.0`
-    - `node-sass@^3.0.0`
+    - `sass@^1.26.10`
 
     - See https://www.npmjs.com/package/consolidate for a full list
 

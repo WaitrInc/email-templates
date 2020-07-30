@@ -1,8 +1,11 @@
 {
-  "name": "email-templates",
+  "name": "@waitr/email-templates",
   "description": "Node.js module for rendering beautiful emails with ejs, pug, swig, hbs, jade or handlebars templates and email-friendly inline CSS using juice.",
-  "version": "2.7.1",
+  "version": "2.7.2",
   "author": "Nick Baugh <niftylettuce@gmail.com>",
+  "files": [
+    "lib/*"
+  ],
   "contributors": [
     {
       "name": "Nick Baugh",
@@ -55,7 +58,7 @@
   },
   "main": "lib/main.js",
   "scripts": {
-    "prepublish": "npm run compile && npm prune",
+    "prepare": "npm run compile && npm prune",
     "compile": "babel src --modules common --out-dir lib",
     "watch": "babel src --watch --modules common --out-dir lib --source-maps true",
     "test": "standard && mocha",
@@ -68,7 +71,8 @@
     "debug": "^2.2.0",
     "glob": "^6.0.0",
     "juice": "^4.1.0",
-    "lodash": "^4.0.1"
+    "lodash": "^4.0.1",
+    "sass": "^1.26.10"
   },
   "devDependencies": {
     "async": "^1.5.0",
@@ -84,7 +88,6 @@
     "less": "^2.5.0",
     "mkdirp": "^0.5.1",
     "mocha": "^2.1.0",
-    "node-sass": "^3.1.1",
     "nodemailer": "^1.3.4",
     "nodemailer-wellknown": "^0.1.5",
     "postmark": "^1.0.0",

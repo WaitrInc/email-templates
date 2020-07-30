@@ -3,8 +3,7 @@
  *
  * @author: [@jasonsims]('https://github.com/jasonsims')
  */
-
-import {extname, dirname, basename} from 'path'
+import { extname, dirname, basename } from 'path'
 import cons from 'consolidate'
 import P from 'bluebird'
 
@@ -100,7 +99,7 @@ function renderStyl (source, locals) {
 }
 
 function renderSass (source, locals) {
-  const sass = require('node-sass')
+  const sass = require('sass');
 
   if (!locals.data) {
     locals.data = source
